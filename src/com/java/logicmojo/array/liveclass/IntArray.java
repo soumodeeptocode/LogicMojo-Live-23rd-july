@@ -1,4 +1,4 @@
-package com.java.logicmojo.array;
+package com.java.logicmojo.array.liveclass;
 
 
 import java.util.Iterator;
