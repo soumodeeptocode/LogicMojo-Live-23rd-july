@@ -150,10 +150,10 @@ public class LinkedList {
     }
 
     //string representation of LL//
-    public String toString(){
+    public synchronized String toString(){
         String result = "[";
         if(head == null){
-            return result + "|";
+            return result + "]";
         }
         result = result + head.getData();
         ListNode node = head.getNext();
@@ -161,7 +161,7 @@ public class LinkedList {
             result = result+ "," + node.getData();
             node = node.getNext();
         }
-        return result + "|]";
+        return result + "]";
     }
 
     public synchronized void clearList(){
